@@ -1,12 +1,11 @@
 package main
 
 import (
-	"fmt"
-
 	"github.com/angelcervera/go_monorepo_dependencies/dep_one"
+	"github.com/angelcervera/go_monorepo_dependencies/dep_two"
 )
 
 func main() {
-	message := dep_one.SayHi("Angel")
-	fmt.Println(message)
+	user := dep_one.CreateUser("angelcervera")
+	dep_two.SayHi(user.UserName, user.Password)
 }

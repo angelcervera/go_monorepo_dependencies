@@ -1,3 +1,7 @@
+
+## Dependencies
+![Dependencies graph](./dependencies.png)
+
 ## Structure
 
 ```text
@@ -21,7 +25,7 @@ function
 | `go mod init github.com/angelcervera/go_monorepo_dependencies/cli-app`                     | init a new module                                                                                                             |
 | `go mod edit -replace github.com/angelcervera/go_monorepo_dependencies/dep_one=../dep_one` | add replace to allow access to the dependency                                                                                 |
 | `go mod tidy`                                                                              | After adding an import in the `.go` file, this command will add required dependencies in the `go.mod`, with the right version |
-|                                                                                            |                                                                                                                               |
+| `go get github.com/ozgio/strutil`   | Adds a dependency into `go.mod` and it's                                                                                      |
 |                                                                                            |                                                                                                                               |
 
 ## Notes
