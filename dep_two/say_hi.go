@@ -4,6 +4,6 @@ import (
 	"log"
 )
 
-func SayHi(name string, id string) {
-	log.Printf("Hi, %v with id [%v]", name, id)
+func SayHi(name string, password string) {
+	log.Printf("Hi, %v with passwod [%v]", name, password)
 }
