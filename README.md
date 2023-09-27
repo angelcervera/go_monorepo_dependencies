@@ -29,7 +29,9 @@
 └── README.md
 
 ```
+
 ## Deploy function
+
 ```shell
 export GCP_REGION=us-central1
 export GGP_PROJECT=tcgland-dev2
@@ -48,11 +50,15 @@ gcloud functions deploy testing-monorepo-fnt \
 curl "https://$GCP_REGION-$GGP_PROJECT.cloudfunctions.net/testing-monorepo-fnt?user_name=Angel"
 > {"userName":"Angel","password":"fegcd"}
 ```
+
 ## Run from cli
+
+```shell
 cd ./cd cli_app
 go build .
 ./cli_app Angel
 > 2023/09/27 15:54:55 Hi, angelcervera with passwod [eickc]
+
 ```
 
 ## References
@@ -71,7 +77,8 @@ go build .
 | `go mod edit -replace github.com/angelcervera/go_monorepo_dependencies/dep_one=../dep_one` | add replace to allow access to the dependency                                                                                 |
 | `go mod tidy`                                                                              | After adding an import in the `.go` file, this command will add required dependencies in the `go.mod`, with the right version |
 | `go get github.com/ozgio/strutil`                                                          | Adds a dependency into `go.mod` and it's                                                                                      |
-|                                                                                            |                                                                                                                               |
+| `go work init`                                                                             | Init the workspace                                                                                                            |
+| `go work use -r .`                                                                         | Add all modules into the workspace                                                                                            |
 
 ## Notes
 
