@@ -7,6 +7,7 @@ import (
 	"log"
 	"net/http"
 
+	_ "github.com/GoogleCloudPlatform/functions-framework-go/funcframework"
 	"github.com/GoogleCloudPlatform/functions-framework-go/functions"
 )
 
