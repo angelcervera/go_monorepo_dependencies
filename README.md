@@ -58,6 +58,7 @@ go build .
 ## References
 
 - [Go Workspaces](https://go.dev/doc/tutorial/workspaces)
+- [Go dependencies in Cloud Functions](https://cloud.google.com/functions/docs/writing/specifying-dependencies-go)
 - [GoogleCloudPlatform/buildpacks](https://github.com/GoogleCloudPlatform/buildpacks)
 - [Google Cloud's buildpacks](https://cloud.google.com/docs/buildpacks/overview)
 - [Google Cloud's buildpacks builders](https://cloud.google.com/docs/buildpacks/builders)
