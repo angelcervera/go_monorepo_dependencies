@@ -6,9 +6,9 @@ import (
 )
 
 func GeneratePassword() string {
-	id, error := strutil.Random("abcdefghik", 5)
-	if error != nil {
-		log.Fatal(error)
+	id, err := strutil.Random("abcdefghik", 5)
+	if err != nil {
+		log.Fatal(err)
 	}
 
 	return id

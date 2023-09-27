@@ -5,10 +5,29 @@
 ## Structure
 
 ```text
-dep-one
-dep-two
-dep-transitive
-function
+.
+├── cli_app
+│   ├── go.mod
+│   ├── go.sum
+│   └── main.go
+├── dep_one
+│   ├── create_user.go
+│   ├── go.mod
+│   └── go.sum
+├── dep_transitive
+│   ├── generate_password.go
+│   ├── go.mod
+│   └── go.sum
+├── dep_two
+│   ├── go.mod
+│   ├── go.sum
+│   └── say_hi.go
+├── function
+│   ├── create_user.go
+│   ├── go.mod
+│   └── go.sum
+└── README.md
+
 ```
 
 ## References
