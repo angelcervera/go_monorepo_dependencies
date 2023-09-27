@@ -46,6 +46,13 @@ gcloud functions deploy testing-monorepo-fnt \
     --project=$GGP_PROJECT
 
 curl "https://$GCP_REGION-$GGP_PROJECT.cloudfunctions.net/testing-monorepo-fnt?user_name=Angel"
+> {"userName":"Angel","password":"fegcd"}
+```
+## Run from cli
+cd ./cd cli_app
+go build .
+./cli_app Angel
+> 2023/09/27 15:54:55 Hi, angelcervera with passwod [eickc]
 ```
 
 ## References
