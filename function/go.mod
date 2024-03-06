@@ -10,7 +10,7 @@ require (
 require (
 	cloud.google.com/go/functions v1.13.0 // indirect
 	github.com/angelcervera/go_monorepo_dependencies/dep_transitive v0.0.0-00010101000000-000000000000 // indirect
-	github.com/cloudevents/sdk-go/v2 v2.14.0 // indirect
+	github.com/cloudevents/sdk-go/v2 v2.15.2 // indirect
 	github.com/google/uuid v1.3.0 // indirect
 	github.com/json-iterator/go v1.1.10 // indirect
 	github.com/modern-go/concurrent v0.0.0-20180228061459-e0a39a4cb421 // indirect
